@@ -153,9 +153,14 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto 0;
+}
+
+.about-pic{
+    height: 400px;
+    width: 350px;
 }
 
 .section__text {
@@ -194,6 +199,12 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+}
+
+.education-icon{
+    height:1.7rem;
+    width:1.8rem;
+    margin-top: 0.2rem;
 }
 
 .btn-container {
@@ -314,15 +325,23 @@ section {
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 3.5rem;
+    gap:3.5rem;
     justify-content: space-around;
 }
 
 article {
     display: flex;
-    width: 10rem;
+    width: 9rem;
     justify-content: space-around;
-    gap: 0.5rem;
+    gap: 0.7rem;
+}
+
+.article-title {
+    margin-top: 0.3rem;
+}
+
+article p{
+    color: white;
 }
 
 article .icon {
@@ -336,6 +355,10 @@ article .icon {
 .color-container{
     background: rgb(250,250,250);
     border-color: rgb(163,163,163);
+}
+
+.details-container h4 {
+    font-weight: 100;
 }
 
 .project-img {
