@@ -279,9 +279,30 @@
                         onclick="location.href='https://github.com/RishJohn14/CarparkAPI'"> GitHub
                     </button>
                     <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/RishJohn14'"> Info Page
-                </button>
+                    id="openURECA"
+                    class="btn btn-color-2 project-btn"> Brief Info
+                    </button>
+                    <div id="URECAModal" class="modal">
+                        <div class="modal-content">
+                            <span class="closeURECA">&times;</span>
+                            <br/>
+                            <h3 class="subtitle"> TWA Autonomous Agents </h3>
+                            <br/>
+                            <p> Designed 3 autonomous agents for Cambridge CARES' World Avatar Project. Agents would 
+                                fetch data from public APIs of GovTech & LTA. Data was processed and sorted according to ontologies
+                                that I designed and subsequently instantiated as IRIs to be added into the Knowledge Graph
+                                <br/><br/>
+                                Data included information on government structures like schools, carparks, and hawker centers.
+                                Code was developed in Java and subsequently dockerized
+                            </p>
+                            <br/>
+                            <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('./assets/Paper.pdf')">
+                                Academic Paper
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="details-container color-container">

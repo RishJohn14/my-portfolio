@@ -454,7 +454,8 @@ footer p{
 }
 
 /* Close button */
-.close {
+.close,
+.closeURECA{
     position: absolute;
     color: #e04444;
     top: 10px;
@@ -464,7 +465,7 @@ footer p{
     font-weight: bold;
 }
 
-.close:hover,
+.close:hover,.closeURECA:hover,.closeURECA:focus,
 .close:focus {
     color: black;
     text-decoration: none;

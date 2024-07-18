@@ -7,7 +7,6 @@ function toggleMenu()
     icon.classList.toggle("open");
 }
 
-// Ensure the script runs after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -38,3 +37,35 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the modal
+    var URECAmodal = document.getElementById("URECAModal");
+    console.log("Modal:", URECAmodal);  // Debugging step
+
+    // Get the button that opens the modal
+    var URECAbtn = document.getElementById("openURECA");
+    console.log("Button:", URECAbtn);  // Debugging step
+
+    // Get the <span> element that closes the modal
+    var URECAspan = document.getElementsByClassName("closeURECA")[0];
+    console.log("Close button:", URECAspan);  // Debugging step
+
+    // When the user clicks the button, open the modal 
+    URECAbtn.onclick = function() {
+        URECAmodal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    URECAspan.onclick = function() {
+        URECAmodal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == URECAmodal) {
+            URECAmodal.style.display = "none";
+        }
+    }
+});
+
