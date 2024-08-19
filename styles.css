@@ -455,8 +455,10 @@ footer p{
 
 /* Close button */
 .close,
+.closeSC,
 .closeURECA{
     position: absolute;
+    cursor: pointer;
     color: #e04444;
     top: 10px;
     right: 40px;

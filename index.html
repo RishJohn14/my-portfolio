@@ -46,7 +46,7 @@
         <div class="btn-container">
             <button 
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')">Resume</button>
+            onclick="window.open('./assets/CV.pdf')">Resume</button>
             <button 
             class="btn btn-color-1"
             onclick="location.href='./#contact'">Contact Me</button>
@@ -314,13 +314,27 @@
                 <h2 class="experience-sub-title project-title">Smart Contract Vulnerabilities</h2>
                 <div class="btn-container">
                     <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="location.href='https://github.com/RishJohn14'"> GitHub
+                    id="openSC"
+                    class="btn btn-color-2 project-btn"> Brief Info
                     </button>
-                    <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/RishJohn14'"> Live Demo
-                </button>
+                    <div id="SCModal" class="modal">
+                        <div class="modal-content">
+                            <span class="closeSC">&times;</span>
+                            <br/>
+                            <h3 class="subtitle"> LLMs for Smart Contract Vulnerability </h3>
+                            <br/>
+                            <p> Currently working on my Final Year Project at NTU with Prof Liu Yang as a part of the Cyber Security Lab
+                                <br/><br/>
+                                Project involves using Large Language Models to study and summarize Smart Contract written in Solidity and provide a summarized
+                                report of its vulnerabilities. Research Paper to be published shortly 
+                            </p>
+                            <br/>
+                            <!-- <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('./assets/Paper.pdf')">
+                                Academic Paper
+                            </button> -->
+                        </div>
+                    </div>
                 </div>
             </div>
          </div>

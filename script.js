@@ -69,3 +69,34 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the modal
+    var SCModal = document.getElementById("SCModal");
+    console.log("Modal:", SCModal);  // Debugging step
+
+    // Get the button that opens the modal
+    var SCbtn = document.getElementById("openSC");
+    console.log("Button:", SCbtn);  // Debugging step
+
+    // Get the <span> element that closes the modal
+    var SCspan = document.getElementsByClassName("closeSC")[0];
+    console.log("Close button:", SCspan);  // Debugging step
+
+    // When the user clicks the button, open the modal 
+    SCbtn.onclick = function() {
+        SCModal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    SCspan.onclick = function() {
+        SCModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == SCModal) {
+            SCModal.style.display = "none";
+        }
+    }
+});
+
